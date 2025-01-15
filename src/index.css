@@ -120,11 +120,12 @@ margin: 30px;
 .meme {
   position: relative;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 30px;
-
+  width: 100%;
+  max-width: 430px;
+  margin: 30px auto;
 }
 
 .memeImg {
@@ -159,16 +160,18 @@ margin: 30px;
   top: 0px;
   left: 50%;
   transform: translateX(-50%);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  width: 400px;
+  white-space: wrap;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .meme span.bottom{
   bottom: 0px;
   left: 50%;
   transform: translateX(-50%);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  width: 400px;
+  white-space: wrap;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
