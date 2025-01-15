@@ -1,10 +1,11 @@
 import React from "react"
+import MainContent from "./MainContent"
 
 function App() {
 
   return (
     <>
-      
+      <MainContent/>
     </>
   )
 }

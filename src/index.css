@@ -1,0 +1,118 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", serif;
+  background-color: rgb(141, 141, 141);
+}
+
+.mainContent{
+  border: 2px solid black;
+  border-radius: 5px;
+  height: 100%;
+  width: 100%;
+  margin: 150px 0;
+  background-color: rgb(224, 224, 224);
+}
+
+.header{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 60px;
+  background-image: linear-gradient(to right, rgb(32, 32, 32) , rgb(100, 100, 100));
+}
+
+.header img{
+  height: 65px;
+  margin: 10px 0px 10px 10px;
+}
+
+.header span{
+  font-family: inherit;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-size: 20px;
+  font-style: oblique;
+}
+
+.memeContent{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin: 30px;
+}
+
+.InputSection{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.topText{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  margin-right: 30px;
+  gap: 7px;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+}
+
+.bottomText{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  margin-left: 30px;
+  gap: 7px;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+}
+
+.topText input,
+.bottomText input{
+  border: 1px solid rgb(156, 156, 156);
+  border-radius: 5px;
+  height: 27px;
+  background-color: rgb(241, 241, 241);
+  padding: 0 7px;
+}
+
+.getMemeBtn{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  background-image: linear-gradient(to right, rgb(46, 46, 46), rgb(116, 116, 116));
+  font-family: inherit;
+  font-weight: 500;
+  font-style: oblique;
+  color: white;
+  height: 35px;
+  width: 430px;
+  border: none;
+  border-radius: 5px;
+  letter-spacing: 0.2px;
+  word-spacing: 1px;
+  margin-top: 25px;
+}
+
+.getMemeBtn img{
+  height: 20px;
+}
+
+.memeImg {
+  margin-top: 30px;
+  height: 240px;
+}
