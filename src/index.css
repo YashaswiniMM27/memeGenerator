@@ -4,6 +4,7 @@ body{
   align-items: center;
   padding: 0;
   margin: 0;
+  min-height: 100vh;
   font-family: "Inter", serif;
   background-color: rgb(141, 141, 141);
 }
@@ -13,7 +14,6 @@ body{
   border-radius: 5px;
   height: 100%;
   width: 100%;
-  margin: 150px 0;
   background-color: rgb(224, 224, 224);
 }
 
@@ -106,13 +106,69 @@ margin: 30px;
   letter-spacing: 0.2px;
   word-spacing: 1px;
   margin-top: 25px;
+  cursor: pointer;
+}
+
+.getMemeBtn:active{
+  background-image: linear-gradient(to right, rgb(95, 95, 95), rgb(185, 185, 185));
 }
 
 .getMemeBtn img{
   height: 20px;
 }
 
-.memeImg {
+.meme {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-top: 30px;
-  height: 240px;
+
+}
+
+.memeImg {
+  max-width: 430px;
+  height: auto;
+  border-radius: 3px;
+}
+
+.meme span {
+  position: absolute;
+  text-align: center;
+  margin-block: 15px;
+  padding-inline: 5px;
+  font-family: impact, sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow:
+      2px 2px 0 #000,
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      0 2px 0 #000,
+      2px 0 0 #000,
+      0 -2px 0 #000,
+      -2px 0 0 #000,
+      2px 2px 5px #000;
+}
+
+.meme span.top{
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.meme span.bottom{
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
