@@ -1,15 +1,16 @@
 import React from "react"
 import MainContent from "./MainContent"
 import UseEffect from "./Practice/UseEffectPractice"
+import WindowTrackerApp from "./Practice/WindowTrackerApp"
 
 function App() {
 
-  return (
-    <>
-      <MainContent/>
-    </>
-  )
-}
+//   return (
+//     <>
+//       <MainContent/>
+//     </>
+//   )
+// }
 
 
 
@@ -27,5 +28,15 @@ function App() {
 //   </>
 // )
 // }
+
+
+
+//Window Tracker App
+return (
+  <>
+    <WindowTrackerApp/>
+  </>
+)
+}
 
 export default App
