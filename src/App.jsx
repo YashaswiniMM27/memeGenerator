@@ -4,18 +4,28 @@ import UseEffect from "./Practice/UseEffectPractice"
 
 function App() {
 
-//   return (
-//     <>
-//       <MainContent/>
-//     </>
-//   )
-// }
-
-return (
-  <>
-    <UseEffect/>
-  </>
-)
+  return (
+    <>
+      <MainContent/>
+    </>
+  )
 }
+
+
+
+
+
+
+
+
+
+
+//Practice code to fetch starWars character from an API
+// return (
+//   <>
+//     <UseEffect/>
+//   </>
+// )
+// }
 
 export default App

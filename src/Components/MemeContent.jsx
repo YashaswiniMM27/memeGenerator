@@ -1,4 +1,4 @@
-import {useState} from "react"
+import {useState, useEffect} from "react"
 
 export default function MemeContent(){
 
@@ -8,6 +8,8 @@ export default function MemeContent(){
         bottomText: "It's gone now"
     })
 
+    const [allMemes, setAllMemes] = useState([])
+
     function handleChange(event){
         const {value, name} = event.currentTarget
         setMeme(prevMeme => ({
@@ -15,6 +17,12 @@ export default function MemeContent(){
             [name]: value
         }))
     }
+
+    useEffect(() => {
+        fetch("https://api.imgflip.com/get_memes")
+        .then(res => res.json())
+        .then(data => setAllMemes(data.data.memes))
+    }, [])
 
     return(
         <section className="memeContent">
